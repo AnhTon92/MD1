@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo CSS</title>
+    <link rel="stylesheet" href="./democss.css">
+    <!-- truy cập cùng cấp: ./
+        truy cập khác cấp: ../ -->
+</head>
+<body>
+    <style>
+        .internal{
+            background-color: green;
+        }
+        
+
+    </style>
+
+<!-- các cách sử dụng css -->
+<!-- Inline Style -->
+    <div style="background-color: pink;">
+        Inline Style
+    </div>
+    <!-- Internal Style -->
+    <div class="internal">Internal Style</div>
+    <!-- External Style -->
+    <div class="external">External Style</div>
+    <!-- Sự ưu tiên -->
+    <!-- inline > (internal==external) (gọi sau thì hiển thị trước) -->
+    <div style="background-color: red;" class="priority">Sự ưu tiên</div>
+    <!-- Bộ chọn -selector -->
+    <!-- 
+        1. * chọn tất cả các thành phần-> thường dùng để reset cả trang web
+        2.tag -> chọn các thẻ cùng loại
+        3. tag01 tag02 -> chọn tất cả thành phần bên trong tag01
+        4. tag01, tag02 -> chọn tất cả thành phần tag01 và tag02
+        5. tag01+tag02 -> chọn phần tử tag02 kế bên tag01
+        6. tag01 > tag02 -> chọn tất cả thành phần của tag02 có thành phần cha là tag01
+        7. .class -> gọi đến thẻ
+           #id -> gọi đến thẻ
+        8. :hover: -> khi con trỏ chuột đi qua  
+     -->
+     <div>
+        <p>Anh Tự</p>
+        <p>Anh Tuấn</p>
+        <p>Anh Tiệp</p>
+        <p>Anh </p>
+     </div>
+</body>
+</html>

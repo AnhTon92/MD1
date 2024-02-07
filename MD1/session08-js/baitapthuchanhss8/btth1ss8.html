@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nhapdiemSV</title>
+</head>
+<body>
+    <script>
+            let diemVatLy = parseInt(prompt('Nhap so diem vat ly'));
+            let diemHoaHoc = parseInt(prompt('Nhap so diem hoa'));
+            let diemSinh = parseInt(prompt('Nhap vao diem Sinh'));
+            let tong = (diemVatLy + diemHoaHoc + diemSinh);
+            let diemTrungBinh = tong / 3;
+            document.writeln(`diem tong ba mon la: ${tong}`);
+            document.writeln(`diem trung binh ba mon la: ${diemTrungBinh}`);
+    </script>
+</body>
+</html>

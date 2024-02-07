@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-color: white;
+        height: 1200px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .content{
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        flex-basis: 30%;
+        padding: 10px;
+    }
+    .content-one{
+        background-color: lightcoral;
+        
+    }
+    .content-two{
+        background-color: lightpink;
+    }
+    .content-three{
+        background-color: lightsalmon;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="content content-one"> <b>Content One</b>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quaerat.</p>
+        </div>
+        <div class="content content-two"><b>Content Two</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, atque?</p>
+        </div>
+        <div class="content content-three"><b>Content Three</b>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, fugiat?</p>
+        </div>
+    </div>
+</body>
+</html>

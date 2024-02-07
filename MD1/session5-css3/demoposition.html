@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo position</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .relative{
+        position: relative;
+        background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+
+    }
+    .container{
+        background-color: beige;
+        height: 500px;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    .box-1{
+        background-color: aquamarine;
+        position:absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .box-2{
+        background-color: yellowgreen;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        /* z-index: 2; */
+    }
+    .box-3{
+        background-color: brown;
+        position: absolute; 
+        top: 150px;
+        left: 150px;
+        /* z-index: 3; */
+    }
+    .sticky{
+        position: sticky;
+        top 10px;
+        background-color: blue;
+    }
+    p{
+        height: 200vh;
+    }
+    
+</style>
+<body>
+    <!-- Position giúp cho việc căn chỉnh các thành phần dễ dàng hơn
+        Khi dùng Position thì có thể sử dụng các thuộc tính: top left right bottom z- index 
+        
+            Các thuộc tính trong position
+            + position: relative -> vị trí tương đối - Lấy chính bản thân là mốc tọa độ 
+            + position: absolute -> vị trí tuyệt đối-  Lấy position gần nhất làm mốc tọa độ nếu không có thì sẽ lấy cửa sổ window làm gốc
+            + position: sticky -> vị trí window
+            + position: static -> không được định vị theo bất kỳ thuộc tính nào, độc lập so với phần còn lại
+            + position: fixed -> Vị trí window
+
+            sticky -> áp dụng làm navbar khi cuộn trang
+            fixed -> hay được dùng làm các nút đứng yên khi cuộn trang
+            relavtive và absolute thường dùng nhiều nhất được kết hợp để điều chỉnh giao diện (relative làm mỏ neo, static lấy relative làm gốc để bay theo tọa độ gốc)
+    -->     
+    <!-- <div class="relative">Position relative</div> -->
+    <div class="container">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+    </div>
+    <div >
+        <nav class="sticky">Đây là Nav</nav>
+        <p>
+        </p>
+    </div>
+    <div class="static">Position: Static</div>
+</body>
+</html>

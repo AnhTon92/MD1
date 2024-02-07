@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.price-details {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-details li {
+  font-size: 18px;
+}
+
+.passengers {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.passengers li {
+  font-size: 16px;
+}
+
+.check-in-baggage {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-in-baggage li {
+  font-size: 16px;
+}
+
+.services {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.no-extra-services {
+  font-size: 16px;
+  color: #888;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+.total{
+  background-color: blueviolet;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoTable</title>
+</head>
+<body>
+    <!--thẻ table để định nghĩa bảng
+        thẻ thead: định nghĩa header của bảng
+        thẻ tr: định nghĩa dòng
+        thẻ th: định nghĩa cột cho dòng đối với header
+        thẻ tbody: định nghĩa phần thân của bảng
+        thẻ td: định nghĩa cột cho body bảng
+        thẻ tfoot: định nghĩa phần chân bảng
+        thuộc tính colspan: Dùng để chiếm nhiều cột của thẻ đó
+        thuộc tính rowspan: Dùng để chiếm nhiều dòng của thẻ đó
+        thuộc tính border: để tạo đường viền cho bảng
+     -->
+   <table border="1">
+    <!-- đầu bảng -->
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name Product</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <!-- thân bảng -->
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Áo thun</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Quần bò</td>
+            <td>1400</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Giầy</td>
+            <td>3000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Tổng tiền</td>
+            <td>6600</td>
+        </tr>
+    </tfoot>
+   </table> 
+   <table border="1">
+    <thead>
+        <tr>
+            <th>Quý</th>
+            <th>Tháng</th>
+            <th>Doanh thu</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">Một</td>
+            <td>Một</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Hai</td>
+            <td>$80</td>
+            
+        </tr>
+        <tr>
+            <td>Ba</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Hai</td>
+            <td>Bốn</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Năm</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td>Sáu</td>
+            <td>$80</td>
+        </tr>
+    </tbody>
+
+   </table>
+</body>
+</html>

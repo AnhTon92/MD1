@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  main {
+    margin: 0 auto;
+    width: 500px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  
+  #card-types {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #card-details {
+    display: flex;
+    flex-direction: column;
+  }
+  

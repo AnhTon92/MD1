@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todolist</title>
+  <style>
+    li span.completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <form id="form">
+    <input type="text" placeholder="nhập dữ liệu..." id="input-form">
+    <button type="submit" id="btn-submit">Add</button>
+  </form>
+  <ul id="todolist">
+    </ul>
+  <script>
+    const form = document.getElementById("form");
+    const input = document.getElementById("input-form");
+    const btn = document.getElementById("btn-submit");
+    const ul = document.getElementById("todolist");
+
+    // Submit event handler (unchanged)
+
+    ul.addEventListener("click", (event) => {
+      const clickedElement = event.target;
+
+      // Handle completion and deletion (unchanged)
+
+      // Handle editing
+      if (clickedElement.tagName === "BUTTON" && clickedElement.textContent === "Edit") {
+        const li = clickedElement.parentNode;
+        const span = li.querySelector("span");
+
+        // Create a text input for editing
+        const editInput = document.createElement("input");
+        editInput.type = "text";
+        editInput.value = span.textContent;
+
+        // Replace the span with the input
+        li.replaceChild(editInput, span);
+
+        // Add a "Save" button
+        const saveBtn = document.createElement("button");
+        saveBtn.textContent = "Save";
+        li.appendChild(saveBtn);
+
+        saveBtn.addEventListener("click", () => {
+          const editedText = editInput.value;
+          span.textContent = editedText;
+          li.replaceChild(span, editInput);
+          saveBtn.remove();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
